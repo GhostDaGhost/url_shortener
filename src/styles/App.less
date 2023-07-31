@@ -1,0 +1,58 @@
+#outercontainer {
+    display: flex;
+    justify-content: center;
+
+    top: 7vmin;
+    position: relative;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+
+    #innercontainer {
+        padding: 5vmin;
+        padding-top: 1vmin;
+
+        border-radius: 1.5vh;
+        border: .3vh solid black;
+        background-color: rgb(36, 36, 36);
+
+        #divider {
+            opacity: .2;
+        }
+
+        #shortenedurl_container {
+            #shortenedurl {
+                cursor: text;
+            }
+        }
+
+        #shortenurl_button_container {
+            margin-top: 30px;
+            text-align: center;
+        
+            #shortenurl_button {
+                &:hover {
+                    background-color: rgb(26, 184, 184);
+                }
+        
+                padding: 5px;
+                padding-left: 20px;
+                padding-right: 20px;
+        
+                font-family: 'Poppins';
+                font-size: 17px;
+        
+                color: white;
+                outline: none;
+                cursor: pointer;
+        
+                transition: .1s;
+                
+                border: none;
+                border-radius: .5vh;
+                background-color: teal;
+            }
+        }        
+    }
+}
