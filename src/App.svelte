@@ -10,7 +10,7 @@
         * A function that is triggered when the user presses the shorten URL button. Sends an API request to get shorter link of what was sent.
         * @returns `void` - This returns nothing.
     */
-    export const ShortenURL = () => {
+    const ShortenURL = () => {
         const linkRequest = {
             destination: targetURL,
             domain: { fullName: "rebrand.ly" }
